@@ -1,0 +1,49 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "stargate:jaffa_warrior",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["stargate", "jaffa", "hostile"]
+      },
+      "minecraft:health": {
+        "value": 25,
+        "max": 25
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.3
+      },
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": true
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:behavior.random_look_around": {},
+      "minecraft:behavior.random_stroll": {
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.melee_attack": {
+        "speed_multiplier": 1.2,
+        "attack_once": false
+      }
+    }
+  }
+}
